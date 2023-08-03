@@ -76,5 +76,8 @@ fn part2_algo(line: String, columns: &mut HashMap<usize, Vec<char>>) {
         value_stack.push(column_from.pop().unwrap());
     }
 
-    columns.get_mut(&to).unwrap().extend(value_stack.iter().rev());
+    columns
+        .get_mut(&to)
+        .unwrap()
+        .extend(value_stack.iter().rev());
 }

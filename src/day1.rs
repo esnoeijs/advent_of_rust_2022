@@ -27,4 +27,3 @@ fn count_calories(filename: &String) -> Vec<i32> {
 
     return elf_calories;
 }
-
